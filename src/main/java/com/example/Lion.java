@@ -2,8 +2,11 @@ package com.example;
 
 import java.util.List;
 
-public class Lion {
+public class Lion{
 
+    public List<String> eatMeat() throws Exception {
+        return getFood("Хищник");
+    }
     boolean hasMane;
 
     public Lion(String sex) throws Exception {
@@ -16,17 +19,29 @@ public class Lion {
         }
     }
 
-    Feline feline = new Feline();
-
     public int getKittens() {
-        return feline.getKittens();
+        return 1;
+    }
+
+    public int getKittens(int kittensCount) {
+        return kittensCount;
     }
 
     public boolean doesHaveMane() {
         return hasMane;
     }
 
-    public List<String> getFood() throws Exception {
-        return feline.getFood("Хищник");
+    public String getFamily() {
+        return "Кошачьи";
+    }
+
+    public List<String> getFood(String animalKind) throws Exception {
+        if ("Травоядное".equals(animalKind)) {
+            return List.of("Трава", "Различные растения");
+        } else if ("Хищник".equals(animalKind)) {
+            return List.of("Животные", "Птицы", "Рыба");
+        } else {
+            throw new Exception("Неизвестный вид животного, используйте значение Травоядное или Хищник");
+        }
     }
 }
