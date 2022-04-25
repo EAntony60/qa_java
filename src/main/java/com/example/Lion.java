@@ -7,6 +7,7 @@ public class Lion{
     public List<String> eatMeat() throws Exception {
         return getFood("Хищник");
     }
+
     boolean hasMane;
 
     public Lion(String sex) throws Exception {
