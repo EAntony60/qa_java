@@ -1,11 +1,17 @@
 package com.example;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class LionGetKittensMethodTest {
     private static final String sex = "Самец";
+
+    @Before
+    public void init() {
+        MockitoAnnotations.initMocks(this);
+    }
 
     @Test
     public void shouldBeOneKitten() throws Exception{
