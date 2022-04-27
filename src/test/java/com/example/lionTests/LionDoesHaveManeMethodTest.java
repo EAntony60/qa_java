@@ -1,7 +1,6 @@
 package com.example.lionTests;
 
 import com.example.Lion;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -9,12 +8,12 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
-public class LionDoesHaveManeTest {
+public class LionDoesHaveManeMethodTest {
     private final String sex;
     private final boolean expected;
     private final String expectedException = "Используйте допустимые значения пола животного - самец или самка";
 
-    public LionDoesHaveManeTest(String sex, boolean expected) {
+    public LionDoesHaveManeMethodTest(String sex, boolean expected) {
         this.sex = sex;
         this.expected = expected;
     }
