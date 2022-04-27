@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Lion {
 
+    Feline feline = new Feline();
     boolean hasMane;
 
     public Lion(String sex) throws Exception {
@@ -16,7 +17,20 @@ public class Lion {
         }
     }
 
-    Feline feline = new Feline();
+    public Lion(String sex, Feline feline) throws Exception {
+        this.feline = feline;
+        if ("Самец".equals(sex)) {
+            hasMane = true;
+        } else if ("Самка".equals(sex)) {
+            hasMane = false;
+        } else {
+            throw new Exception("Используйте допустимые значения пола животного - самец или самка");
+        }
+    }
+
+    public void setFeline (Feline feline) {
+        this.feline = feline;
+    }
 
     public int getKittens() {
         return feline.getKittens();
