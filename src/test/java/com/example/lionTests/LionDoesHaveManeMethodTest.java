@@ -11,7 +11,6 @@ import static org.junit.Assert.*;
 public class LionDoesHaveManeMethodTest {
     private final String sex;
     private final boolean expected;
-    private final String expectedException = "Используйте допустимые значения пола животного - самец или самка";
 
     public LionDoesHaveManeMethodTest(String sex, boolean expected) {
         this.sex = sex;
@@ -28,12 +27,13 @@ public class LionDoesHaveManeMethodTest {
     }
 
     @Test
-    public void LionDoesHaveManeTest() throws Exception{
+    public void LionDoesHaveManeTest(){
         try {
             Lion lion = new Lion(sex);
             boolean actual = lion.doesHaveMane();
             assertEquals(expected, actual);
         } catch (Exception e) {
+            String expectedException = "Используйте допустимые значения пола животного - самец или самка";
             assertEquals(expectedException, e.getMessage());
         }
     }
