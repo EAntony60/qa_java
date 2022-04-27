@@ -1,31 +1,42 @@
 package com.example;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
 
+@RunWith(Parameterized.class)
 public class LionGetKittensMethodTest {
     private static final String sex = "Самец";
+    private final int expected;
+    private final int kittensCount;
 
-    @Before
-    public void init() {
-        MockitoAnnotations.initMocks(this);
+    public LionGetKittensMethodTest(int expected, int kittensCount) {
+        this.expected = expected;
+        this.kittensCount = kittensCount;
+    }
+
+    @Parameterized.Parameters
+    public static Object[][] getKittensData() {
+        return new Object[][]{
+                {7, 7},
+                {5, 5},
+                {1, 1},
+                {0, 0}
+        };
     }
 
     @Test
-    public void shouldBeOneKitten() throws Exception{
+    public void shouldBeRightNumberOfKittens() throws Exception{
         Lion lion = new Lion(sex);
-        int expected = 1;
-        int actual = lion.getKittens();
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldBeFiveKittens() throws Exception{
-        Lion lion = new Lion(sex);
-        int expected = 5;
-        int actual = lion.getKittens(5);
+        int actual;
+        if (expected == 1) {
+            actual = lion.getKittens();
+        } else {
+            actual = lion.getKittens(kittensCount);
+        }
         assertEquals(expected, actual);
     }
 }
