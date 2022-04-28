@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LionGetKittensMethodTest {
+public class LionGetKittensWithoutParametersMethodTest {
 
     @Test
     public void shouldBeOneKitten() throws Exception{
