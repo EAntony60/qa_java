@@ -18,7 +18,7 @@ public class LionDoesHaveManeMethodTest {
         this.expected = expected;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}")
     public static Object[][] getSexData(){
         return new Object[][]{
                 {"Самец", true},
