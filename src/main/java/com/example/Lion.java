@@ -28,10 +28,6 @@ public class Lion {
         }
     }
 
-    public void setFeline (Feline feline) {
-        this.feline = feline;
-    }
-
     public int getKittens() {
         return feline.getKittens();
     }
