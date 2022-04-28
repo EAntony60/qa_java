@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39c5b440-04d0-4f17-8bdd-08fd1c0b5797" name="Changes" comment="Updated LionDoesHaveManeMethodTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetFoodMethodTest.java" afterDir="false" />
+    <list default="true" id="39c5b440-04d0-4f17-8bdd-08fd1c0b5797" name="Changes" comment="Updated Lion class. Remove setFeline method">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/catTests/CatGetSoundMethodTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Lion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Lion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetKittensMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetKittensMethodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,23 @@
       <recent name="com.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LionGetFoodMethodTest.shouldReturnFoodForPredator">
+  <component name="RunManager" selected="JUnit.CatGetSoundMethodTest.shouldSayMew">
+    <configuration name="CatGetSoundMethodTest.shouldSayMew" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.catTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.catTests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catTests.CatGetSoundMethodTest" />
+      <option name="METHOD_NAME" value="shouldSayMew" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LionDoesHaveManeMethodTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <extension name="coverage">
@@ -104,22 +118,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.lionTests" />
       <option name="MAIN_CLASS_NAME" value="com.example.lionTests.LionDoesHaveManeMethodTest" />
-      <option name="METHOD_NAME" value="LionDoesHaveManeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LionDoesHaveManeTest.LionDoesHaveManeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coverage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.lionTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.lionTests" />
-      <option name="MAIN_CLASS_NAME" value="com.example.lionTests.LionDoesHaveManeTest" />
       <option name="METHOD_NAME" value="LionDoesHaveManeTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -159,19 +157,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CatGetSoundMethodTest.shouldSayMew" />
       <item itemvalue="JUnit.LionDoesHaveManeMethodTest" />
       <item itemvalue="JUnit.LionDoesHaveManeMethodTest.LionDoesHaveManeTest" />
       <item itemvalue="JUnit.LionGetFoodMethodTest.shouldReturnFoodForPredator" />
       <item itemvalue="JUnit.LionGetKittensMethodTest.shouldBeOneKitten" />
-      <item itemvalue="JUnit.LionDoesHaveManeTest.LionDoesHaveManeTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CatGetSoundMethodTest.shouldSayMew" />
         <item itemvalue="JUnit.LionGetFoodMethodTest.shouldReturnFoodForPredator" />
         <item itemvalue="JUnit.LionGetKittensMethodTest.shouldBeOneKitten" />
         <item itemvalue="JUnit.LionDoesHaveManeMethodTest.LionDoesHaveManeTest" />
         <item itemvalue="JUnit.LionDoesHaveManeMethodTest" />
-        <item itemvalue="JUnit.LionDoesHaveManeTest.LionDoesHaveManeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651067463798</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added test for LionGetFoodMethodTest">
+      <created>1651073728528</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651073728528</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Lion class. Remove setFeline method">
+      <created>1651126554207</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651126554207</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,7 +243,9 @@
     <MESSAGE value="Added LionDoesHaveManeTest" />
     <MESSAGE value="Added LionGetKittensMethodTest" />
     <MESSAGE value="Updated LionDoesHaveManeMethodTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated LionDoesHaveManeMethodTest" />
+    <MESSAGE value="Added test for LionGetFoodMethodTest" />
+    <MESSAGE value="Updated Lion class. Remove setFeline method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Lion class. Remove setFeline method" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="../../../../Desktop/Praktikum/sprint2_2/qa_java/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1651066790812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
