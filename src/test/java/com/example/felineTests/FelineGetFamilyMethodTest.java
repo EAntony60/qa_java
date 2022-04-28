@@ -12,6 +12,6 @@ public class FelineGetFamilyMethodTest {
     public void shouldBeReturnFeline() {
         Feline feline = new Feline();
         String actual = feline.getFamily();
-        assertEquals(expected, actual);
+        assertEquals("Получено некорректное семейство. Должно быть 'Кошачьи'",expected, actual);
     }
 }

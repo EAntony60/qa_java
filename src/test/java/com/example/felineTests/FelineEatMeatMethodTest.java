@@ -14,6 +14,6 @@ public class FelineEatMeatMethodTest {
     public void shouldReturnFoodForPredator() throws Exception{
         Feline feline = new Feline();
         List<String> actual = feline.eatMeat();
-        assertEquals(expected, actual);
+        assertEquals("Получен некорректный список продуктов питания для Хищника",expected, actual);
     }
 }

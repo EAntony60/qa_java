@@ -12,7 +12,6 @@ public class LionGetKittensWithoutParametersMethodTest {
         int expected = 1;
         Lion lion = new Lion("Самец");
         int actual = lion.getKittens();
-        assertEquals(expected, actual);
-        System.out.println("Метод getKittens возвращает: " + actual);
+        assertEquals("Получено некорректное кол-во котят",expected, actual);
     }
 }

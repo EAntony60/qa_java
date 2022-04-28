@@ -23,6 +23,6 @@ public class CatGetFoodMethodTest {
     public void shouldReturnFoodForPredator() throws Exception {
         Cat cat = new Cat(feline);
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
-        assertEquals(expected, cat.getFood());
+        assertEquals("Получен некорректный список продуктов питания для Хищника",expected, cat.getFood());
     }
 }

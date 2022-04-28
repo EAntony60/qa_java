@@ -32,10 +32,10 @@ public class LionDoesHaveManeMethodTest {
         try {
             Lion lion = new Lion(sex);
             boolean actual = lion.doesHaveMane();
-            assertEquals(expected, actual);
+            assertEquals("Получено некорректное значение пола Льва", expected, actual);
         } catch (Exception e) {
             String expectedException = "Используйте допустимые значения пола животного - самец или самка";
-            assertEquals(expectedException, e.getMessage());
+            assertEquals("Получено некорректное описание ошибки", expectedException, e.getMessage());
         }
     }
 

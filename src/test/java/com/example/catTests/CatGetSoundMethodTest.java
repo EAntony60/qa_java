@@ -13,6 +13,6 @@ public class CatGetSoundMethodTest {
     public void shouldSayMew() {
         Cat cat = new Cat(new Feline());
         String actual = cat.getSound();
-        assertEquals(expected, actual);
+        assertEquals("Получен некорректный звук издаваемый кошкой",expected, actual);
     }
 }

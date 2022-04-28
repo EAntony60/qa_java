@@ -23,6 +23,6 @@ public class LionGetFoodMethodTest {
         Lion lion = new Lion("Самец", feline);
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(feline.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
-        assertEquals(expected, lion.getFood());
+        assertEquals("Получен некорректный список продуктов питания для Хищника", expected, lion.getFood());
     }
 }
