@@ -1,5 +1,6 @@
 package com.example.lionTests;
 
+import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,9 +28,21 @@ public class LionDoesHaveManeMethodTest {
     }
 
     @Test
-    public void LionDoesHaveManeTest(){
+    public void LionDoesHaveManeTestFirstConstructor(){
         try {
             Lion lion = new Lion(sex);
+            boolean actual = lion.doesHaveMane();
+            assertEquals(expected, actual);
+        } catch (Exception e) {
+            String expectedException = "Используйте допустимые значения пола животного - самец или самка";
+            assertEquals(expectedException, e.getMessage());
+        }
+    }
+
+    @Test
+    public void LionDoesHaveManeTestSecondConstructor(){
+        try {
+            Lion lion = new Lion(sex, new Feline());
             boolean actual = lion.doesHaveMane();
             assertEquals(expected, actual);
         } catch (Exception e) {
