@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39c5b440-04d0-4f17-8bdd-08fd1c0b5797" name="Changes" comment="Added test FelineGetFamilyMethodTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetKittensWithParametersMethodTest.java" afterDir="false" />
+    <list default="true" id="39c5b440-04d0-4f17-8bdd-08fd1c0b5797" name="Changes" comment="Added test for second constructor to class Lion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetKittensMethodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lionTests/LionGetKittensWithoutParametersMethodTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651131989558</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added test LionGetKittensWithParametersMethodTest&#10;Updated test LionGetKittensWithoutParametersMethodTest">
+      <created>1651133215749</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651133215749</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added test for second constructor to class Lion">
+      <created>1651133508394</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1651133508394</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,7 +297,9 @@
     <MESSAGE value="Added test CatGetFoodMethodTestw" />
     <MESSAGE value="Added test FelineEatMeatMethodTest" />
     <MESSAGE value="Added test FelineGetFamilyMethodTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test FelineGetFamilyMethodTest" />
+    <MESSAGE value="Added test LionGetKittensWithParametersMethodTest&#10;Updated test LionGetKittensWithoutParametersMethodTest" />
+    <MESSAGE value="Added test for second constructor to class Lion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for second constructor to class Lion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="../../../../Desktop/Praktikum/sprint2_2/qa_java/target/jacoco.exec" NAME="jacoco.exec" MODIFIED="1651066790812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
